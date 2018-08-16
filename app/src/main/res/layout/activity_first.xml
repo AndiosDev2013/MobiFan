@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="To:"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edt_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="Mobile #"
+                    android:inputType="phone"
+                    android:padding="@dimen/margin_large"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="For:"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edt_for"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="dinner, just because etc"
+                    android:inputType="text"
+                    android:padding="@dimen/margin_large"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/textsize_normal"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:paddingBottom="@dimen/margin_normal"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_large"
+            android:text="Suggested"
+            android:textColor="@color/text_normal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_large">
+
+            <TextView
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/bg_circle_stroke_grey"
+                android:gravity="center"
+                android:text="B"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob Smith"
+                    android:textColor="@color/text_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="(202) 555-5555"
+                    android:textColor="@color/text_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:paddingBottom="@dimen/margin_normal"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_large"
+            android:text="Contacts"
+            android:textColor="@color/text_normal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_large">
+
+            <TextView
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/bg_circle_stroke_grey"
+                android:gravity="center"
+                android:text="B"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob Smith"
+                    android:textColor="@color/text_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="(202) 555-5555"
+                    android:textColor="@color/text_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_large">
+
+            <TextView
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/bg_circle_stroke_grey"
+                android:gravity="center"
+                android:text="B"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob Smith"
+                    android:textColor="@color/text_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="(202) 555-5555"
+                    android:textColor="@color/text_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_large">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_large">
+
+            <TextView
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/bg_circle_stroke_grey"
+                android:gravity="center"
+                android:text="B"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob Smith"
+                    android:textColor="@color/text_normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="(202) 555-5555"
+                    android:textColor="@color/text_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:gravity="center_vertical"
+            android:theme="@style/ActionBarTheme"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_back"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginRight="@dimen/margin_normal"-->
+                    <!--android:src="@drawable/baseline_clear_black_36" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="$2,300"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/textsize_large"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/margin_large"-->
+                    <!--android:text="Send"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/textsize_large"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
